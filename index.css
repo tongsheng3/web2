@@ -182,7 +182,7 @@ ul,li{
 		#left{
 			left: 30px;
 		}
-		#right{
+		#tright{
 			right: 30px;
 		}
 		.nav{
@@ -217,7 +217,7 @@ ul,li{
 #left{
 	left: 30px;
 }
-#right{
+#tright{
 	right: 30px;
 }
 .nav{
@@ -302,6 +302,58 @@ ul,li{
 	color: rgb(255,77,4);
 	margin-top: 7px;
 	float: left;
+}
+.rh1{
+	background-color:rgb(255,146,96);
+}
+#rh>div{
+	width:123px;
+}
+#rhc{
+	float:left;
+}
+.rh2{
+	height:140px;
+}
+#rh5{
+	margin-top:-4px;
+}
+#rh1{
+	position:fixed;
+	top:110px;
+	right:-80px;
+}
+#rh2{
+	position:fixed;
+	top:223px;
+	right:-80px;
+}
+#rh3{
+	position:fixed;
+	top:366px;
+	right:-80px;
+}
+#rh4{
+	position:fixed;
+	top:509px;
+	right:-80px;
+}
+#rha{
+	font-size:13px;
+}
+#rhb{
+	font-size:13px;
+	color:white;
+	border:1px solid white;
+	background-color:rgb(255,146,96);
+	width:39px;height:17px;
+	line-height:17px;
+	margin-top:20px;
+}
+#rhd{
+	float:left;
+	margin-top:45px;
+	margin-left:10px;
 }
 #boxbottom{
 	width: 1180px;

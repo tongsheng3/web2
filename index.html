@@ -60,6 +60,23 @@
 			</div>
 		</div>
 		<div style="height: 130px;width: 1380px;float: left;"></div>
+		<div id="rh">
+			<div id="rh1">
+				<div><img src="img/consult-s.png"></div>
+				<div class="rh1" id="rh5"><img src="img/xiaobang.png"></div>
+			</div>
+			<div class="rh1 rh2 clear" id="rh2">
+				<img id="rhc" src="img/youhui.png">
+				<div id="rhd">
+					<p id="rha">未登录</p>
+					<button id="rhb">登录</button>
+				</div>
+			</div>
+			<div class="rh1 rh2" id="rh3">
+				<img src="img/app.png"><img id="rhe" style="margin-top:40px;padding-left:10px;" src="img/serwei.png">
+			</div>
+			<div id="rh4"><img src="img/cart.png"></div>
+		</div>
 		<div id="box-1">
 			<div>全部商品分类</div>
 			<ul>
@@ -149,7 +166,7 @@
 					<div class="slide"><img src="img/bann1.jpeg" alt=""></div>
 				</div>
 				<span id="left"><</span>
-				<span id="right">></span>
+				<span id="tright">></span>
 				<ul class="nav" id="nav" style="left: 300px;">
 					<li class="active">1</li>
 					<li>2</li>
@@ -303,8 +320,7 @@
 		</div>
 	</div>
 
-	<script type="text/javascript">
-		
+	<script type="text/javascript">	
 		var xh = document.getElementById("xh");
 		window.onscroll=function(){
 			var ha = document.documentElement.scrollTop || document.body.scrollTop;
@@ -315,8 +331,6 @@
 				xh.style.position = 'fixed';
 			}
 		}
-
-
 
 
 		var gd = document.getElementById('gd');
@@ -338,28 +352,67 @@
 			}, 20)
 		}
 
-
-
+		var rh1=document.getElementById('rh1');
+		var rh2=document.getElementById('rh2');
+		var rh3=document.getElementById('rh3');
+		var rh4=document.getElementById('rh4');
+		var rh5=document.getElementById('rhe');
+		rh1.onmouseover=function(){
+			rh1.index=false;
+			animate2(rh1);
+		}
+		rh1.onmouseout=function(){
+			rh1.index1=false;
+			animate3(rh1);
+		}
+		rh2.onmouseover=function(){
+			rh2.index=false;
+			animate2(rh2);
+		}
+		rh2.onmouseout=function(){
+			rh2.index1=false;
+			animate3(rh2);
+		}
+		rh3.onmouseover=function(){
+			rh3.index=false;
+			rhe.src="img/erwei.png";
+			rhe.style="margin-left:10px;margin-top:-5px;";
+			animate2(rh3);
+		}
+		rh3.onmouseout=function(){
+			rh3.index1=false;
+			rhe.src="img/serwei.png";
+			rhe.style="margin-top:40px;padding-left:10px;";
+			animate3(rh3);
+		}
+		rh4.onmouseover=function(){
+			rh4.index=false;
+			animate2(rh4);
+		}
+		rh4.onmouseout=function(){
+			rh4.index1=false;
+			animate3(rh4);
+		}
 
 
 		var oNavlist = document.getElementById('nav').children;
 		var slider = document.getElementById('slider');
 		var left = document.getElementById('left');
-		var right = document.getElementById('right');
+		var tright = document.getElementById('tright');
 		var index = 1;
 		var timer;
 		var isMoving = false;
 		box2c. onmouseover= function(){
 			animate(left,{opacity:50})
-			animate(right,{opacity:50})
+			animate(tright,{opacity:50})
 			clearInterval(timer)
 		}
 		box2c.onmouseout = function(){
 			animate(left,{opacity:0})
-			animate(right,{opacity:0})
+			animate(tright,{opacity:0})
 			timer = setInterval(next, 3000);
 		}
-		right.onclick = next;
+		tright.onclick = next;
 		left.onclick = prev;
 		for( var i=0; i<oNavlist.length; i++ ){
 			oNavlist[i].index = i;
@@ -421,6 +474,48 @@
 		sel.onclick = function(){
 			qian.innerText = ' ￥'+sel.value;
 		}
+
+
+
+
+			function animate2(obj){
+			if(obj.index1){
+				clearInterval(obj.timer1);
+			}
+			clearInterval(obj.timer);
+			obj.index=true;
+			obj.timer=setInterval(function(){
+				var now=(parseInt(getStyle(obj,'right')));
+				if(now==0){
+					clearInterval(obj.timer);
+					obj.index=false;
+				}
+				else{
+					var cur=now+1;
+					obj.style.right=cur+'px';
+				}
+			},3)
+		}
+		function animate3(obj){
+			if(obj.index){
+				clearInterval(obj.timer);
+			}
+			clearInterval(obj.timer1);
+			obj.index1=true;
+			obj.timer1=setInterval(function(){
+				var now=(parseInt(getStyle(obj,'right')));
+				if(now==-80){
+					clearInterval(obj.timer1);
+					obj.index1=false;
+				}
+				else{
+					var cur=now-1;
+					obj.style.right=cur+'px';
+				}
+			},3)
+		}
+
+
 	</script>
 </body>
 </html>
