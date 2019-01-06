@@ -1,0 +1,281 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+ul,li{
+	list-style: none;
+}
+#maxbox{
+	width: 1350px;
+	font-size: 12px;
+	margin:auto;
+}
+#topbox{
+	width: 1180px;
+	padding:0px 85px;
+	margin:auto;
+}
+#a{
+	width: 1180px;
+	height: 30px;
+	font-size: 11px;
+	color: rgb(154,151,145);
+	display: flex;
+	align-items: center;
+}
+#a p{
+	float: left;
+	margin-right:395px;
+}
+#a-ul-1 li{
+	width: 20px;
+	height: 20px;
+	margin:0px 10px;
+	float: left;
+	background-image: url(img/common_min.png); 
+}
+
+#a-ul-2 li{
+	margin:0px 9px;  
+	display: flex;
+	align-items: center;
+	float: left;
+}
+#xiaoxi{
+	width: 18px;
+	height: 10px;
+	background-image: url(img/common_min.png);
+	background-position: 18px -117px;
+}
+#a-ul-2 li span{
+	color: rgb(255,77,4);
+}
+.a-x{
+	width: 82px;
+	height: 38px;
+	border: 1px solid rgb(230,229,226);
+	float: left;
+	border-radius: 3px;
+	margin-top: 22px
+}
+
+.a-x div{
+	width: 19px;
+	height: 15px;
+	margin-left: 24px;
+	margin-top: 7px;
+	background-image: url(img/common_min.png);
+}
+.a-x p{
+	font-size: 11px;
+	margin-top: 5px;
+	color: rgb(154,151,145);
+}
+#a-ul span{
+	margin:0px 6px;
+	font-size: 12px;
+	color: rgb(235,231,231);
+	margin-top: 8px;
+	float: left;
+}
+#a-ul li{
+	font-size: 11px;
+	color: rgb(102,101,96);
+	margin-top: 10px;
+	float: left;
+}
+#daohang{
+	width: 1180px;
+	height: 40px;
+	padding:0px 85px;
+	background-color: rgb(0,0,0);
+	float: left;
+}
+#daohang li{
+	width: 96px;
+	height: 40px;
+	color: rgb(255,255,255);
+	text-align: center;
+	line-height: 40px;
+	margin-right: 25px;
+	float: left;
+}
+#zong{
+	width: 1180px;
+	height: 776px;
+	padding: 0px 85px;
+	float: left;
+	background-color: rgb(246,245,244);
+}
+#zong>p{
+	width: 1180px;
+	height: 38px;
+	line-height: 38px;
+	float: left;
+}
+#zong>div{
+	width: 976px;
+	height: 613px;
+	padding:18px 0px 0px 18px;
+	background-color: rgb(255,255,255);
+	margin-right: 6px;
+	float: left;
+}
+#fada{
+	width: 408px;
+	height: 408px;
+	float: left;
+	border: 1px solid rgb(208,205,199);
+}
+#slider{
+	width:150px;
+	height:150px;
+	position:absolute;
+	top: 0px;
+	left: 0px;
+	background:rgb(0,0,0);
+	opacity:0.4;
+	cursor: move;
+	display:none; 
+	z-index: 1000;
+}
+#Bimg{
+	width: 410px;
+	height: 410px;
+	position: absolute;
+	left: 596px;
+	border: 1px solid rgb(208,205,199);
+	overflow:hidden;
+}
+
+#zong>div p{
+	color: rgb(103,102,96);
+	line-height: 22px;
+}
+
+#z-ys{
+	font-size: 10px;
+	margin-right: 25px;
+	text-indent: 2em;
+	color: rgb(0,0,0);
+	float: left;
+}
+.z-sp{
+	width: 58px;
+	height: 30px;
+	font-size: 10px;
+	text-align: center;
+	line-height: 30px;
+	float: left;
+	border: 1px solid white;
+}
+#z-xs{
+	width: 50px;
+	height: 24px;
+	border: 1px solid rgb(206,203,197); 
+	float: left;
+}
+
+.z-butt{
+	width: 24px;
+	height: 26px;
+	border: 1px solid rgb(206,203,197);
+	background-color: rgb(255,255,255);
+
+	float: left;
+}
+#z-ml{
+	font-size: 15px;
+	color: rgb(255,144,124);
+	margin-left: 16px;
+}
+.z-btn{
+	width: 150px;
+	height: 40px;
+	border: 1px solid rgb(255,7,84);
+	float: left;
+	border-radius: 3px;
+	color: white;
+	background-color: rgb(255,7,84);
+	margin:14px 13px;
+}
+#m{    
+	position: fixed;
+	width: 2000px;    
+	height: 2000px;    
+	background: rgba(0, 0, 0, 0.3);    
+	display: none;    
+}
+#du{
+	width: 400px;
+	height: 204px;
+	border: 2px solid rgb(172,169,211);
+	position: fixed;
+    top: 40%;
+    left: 35%;
+	background-color: white;
+}
+#X{
+	margin-left: 385px;
+}
+
+.du-but{
+	width: 148px;
+	height: 38px;
+	border: 1px solid rgb(255,7,84);
+	background-color: rgb(255,7,84);
+	color: white;
+	border-radius: 5px;
+}
+#jx{
+	color: rgb(255,7,84);
+	background-color: white;
+	margin:0px 30px;
+}
+#boxbottom{
+	width: 1180px;
+	height: 346px;
+	padding:0px 85px;
+	background-color: rgb(255,255,255);
+	float: left;
+}
+#boxbot-1{
+	height: 181px;
+	width: 951px;
+	float: left;
+	padding-left: 80px;
+	border-bottom: 1px solid rgb(235,234,232);
+}
+.boxbot-1a{
+	height: 180px;
+	width: 130px;
+	font-size: 12px;
+	color: rgb(102,101,96);
+	line-height: 28px;
+	float: left;
+}
+.bot-1a-sli{
+	font-size: 16px;
+	margin-top: 25px;
+	color: rgb(0,0,0);
+}
+#boxbot-2{
+	width: 1180px;
+	height: 165px;
+	text-align: center;
+	font-size: 12px;
+	float: left;
+}
+#boxbot-2 li{
+	color: rgb(102,101,96);
+	margin-top: 15px;
+	float: left;
+}
+#boxbot-2 span{
+	float: left;
+	margin: 15px 12px 0px 12px;
+}
+#boxbot-2 p{
+	color: rgb(155,163,187);
+	line-height: 24px;
+}
